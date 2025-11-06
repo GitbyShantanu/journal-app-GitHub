@@ -1,0 +1,27 @@
+Incoming HTTP Request
+        |
+   JwtFilter runs
+        |
+  Read Authorization header
+        |
+  Extract token -> extractUsername
+        |
+  Is username != null?
+        |
+  Yes --------------------- No
+   |                         |
+Is SecurityContext.auth == null?    -> skip auth creation -> chain.doFilter()
+   | yes                     | no
+   |                         |
+ load UserDetails            skip (do not overwrite)
+   |
+ validateToken?
+   | yes                no
+   |                      |
+ create Auth object      skip set -> unauthenticated
+ set details & put in
+ SecurityContextHolder
+   |
+ chain.doFilter(request, response)
+   |
+ Controllers / Authorization checks -> use SecurityContextHolder.getContext().getAuthentication()
