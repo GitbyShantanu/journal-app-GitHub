@@ -6,13 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.engineeringdigest.journalApp.enums.Sentiment;
 
+import javax.validation.constraints.NotNull;
+
 
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class JournalEntryDTO {
+    @NotNull
     private String title;
+    @NotNull
     private String content;
     private Sentiment sentiment;
 }
