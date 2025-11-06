@@ -13,11 +13,6 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOriginPatterns("*")
                 .allowedMethods("*")
                 .allowedHeaders("*")
-                .allowCredentials(true)
-                .allowedOrigins(
-                    "https://journal-app-github.onrender.com",
-                    "http://localhost:8080"
-                );
-
+                .allowCredentials(true);
     }
 }
