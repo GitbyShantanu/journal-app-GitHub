@@ -21,7 +21,7 @@ WORKDIR /app
 # Copy jar file from the build stage
 COPY --from=build /app/target/journalApp-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose port (prod is 8081)
+# Expose port
 EXPOSE 8080
 
 # Run the application
