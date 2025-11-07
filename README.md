@@ -1,6 +1,6 @@
 # 🧠 JournalApp – Cloud-Based Smart Journal Backend
 
-A **cloud-connected journaling backend** built with **Spring Boot 2.7** and **Java 22**, integrated with **MongoDB Atlas** and **Redis caching**, designed for real-world performance and scalability.
+A **cloud-connected journaling backend** built with **Spring Boot 2.7** and **Java 17**, integrated with **MongoDB Atlas** and **Redis caching**, designed for real-world performance and scalability.
 
 [![Live Demo](https://img.shields.io/badge/LIVE-DEMO-brightgreen?style=for-the-badge)](https://journal-app-github.onrender.com)
 
@@ -17,7 +17,7 @@ The system is optimized for **speed, reliability, and real-time data consistency
 
 | Category | Technologies |
 |-----------|--------------|
-| ☕ **Language** | Java 22 |
+| ☕ **Language** | Java 17 |
 | 🧱 **Framework** | Spring Boot |
 | 🗄️ **Database** | MongoDB Atlas |
 | ⚡ **Caching** | Redis Cloud |
